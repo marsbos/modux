@@ -3,8 +3,9 @@ Just an effort to mix redux, rxjs &amp; mobx features.
 Main benefits:
 - You can wrap any component with your own created HoC's, from anywhere.
 - Built-in support for 'thunks', no extra work needed.
-- State will be automatically injected in your components.
-- 
+- (Mapped) state and dispatchers will be automatically injected in your components.
+- Each created HoC has its own 'store'
+- Easily 'connect' with multiple HoC's (compose your component with the HoC's you want).
 
 
 ## Usage: 
