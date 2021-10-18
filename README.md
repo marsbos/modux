@@ -78,7 +78,9 @@ const LoginUserPage = withAuth(({ user, login, loading }) => {
 ```
 
 ```js
-export const Header = withAuth(({ user, logout }) => {
+import { withAuth } from './hocs'
+
+const Header = withAuth(({ user, logout }) => {
   ...do something with the user object...
 })
 ```
