@@ -1,11 +1,14 @@
 # modux
 Just an effort to mix redux, rxjs &amp; mobx features.
 
+
 ## Usage: 
 
+### Create a HOC:
 ```js
-import { authenticationReducer, errorReducer, login, logout } from './state'
-import { createUseReducerState, fromReducer, withReducerState, combineReducers } from './state-utils'
+import { login, logout } from './actions'
+import { authenticationReducer, errorReducer } from './reducers'
+import { fromReducer, withReducerState, combineReducers } from './state-utils'
 
 const auth = fromReducer(combineReducers({ auth: authenticationReducer }, { error: errorReducer }))
 
@@ -58,4 +61,10 @@ const login =
   }
 ...
 export { login, logout }
+```
+
+### Usage with (React) component:
+```jsx
+
+
 ```
