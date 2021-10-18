@@ -3,6 +3,8 @@ Just an effort to mix redux, rxjs &amp; mobx features.
 Main benefits:
 - You can wrap any component with your own created HoC's, from anywhere.
 - Built-in support for 'thunks', no extra work needed.
+- State will be automatically injected in your components.
+- 
 
 
 ## Usage: 
@@ -66,8 +68,17 @@ const login =
 export { login, logout }
 ```
 
-### Usage with (React) component:
-```jsx
+### Usage with (React) components:
+```js
+import { withAuth, withAuthErrors } from './hocs'
 
+const LoginUserPage = withAuth(({ user, login, loading }) => {
+    return <><button onClick={()=> login(formData)}>/button></>
+})
+```
 
+```js
+export const Header = withAuth(({ user, logout }) => {
+  ...do something with the user object...
+})
 ```
