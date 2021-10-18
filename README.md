@@ -2,7 +2,7 @@
 Just an effort to mix redux, rxjs &amp; mobx features.
 Main benefits:
 - You can wrap any component with your own created HoC's, from anywhere.
-- 
+- Built-in support for 'thunks', no extra work needed.
 
 
 ## Usage: 
