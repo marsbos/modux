@@ -4,7 +4,7 @@ Main benefits:
 - You can wrap any component with your own created HoC's, from anywhere.
 - Built-in support for 'thunks', no extra work needed.
 - (Mapped) state and dispatchers will be automatically injected in your components.
-- Each created HoC has its own 'store' (same 'instance' every time teh HoC is connected).
+- Each created HoC has its own 'store' (same 'instance' every time the HoC injects state and actions).
 - Consumers ('connected' components) of your HoC automatically get the latest state & actions.
 - Easily 'connect' with multiple HoC's (compose your component with the HoC's you want).
 
